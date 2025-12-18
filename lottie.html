@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gliding Text Marquee</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes glide {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .glide {
+      display: inline-block;
+      white-space: nowrap;
+      animation: glide 20s linear infinite;
+    }
+
+    .marquee {
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+  <div class="marquee w-full">
+    <div class="glide text-4xl md:text-6xl font-bold flex gap-12 items-center">
+      <!-- Repeated list to ensure seamless loop -->
+      <span>html</span>
+      <span class="text-blue-400">bootstrap</span>
+      <span class="text-yellow-400">js</span>
+      <span class="text-cyan-400">react</span>
+      <span class="text-gray-400">github</span>
+      <span class="text-teal-400">tailwind</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- Duplicate for seamless loop -->
+      <span>html</span>
+      <span class="text-blue-400">bootstrap</span>
+      <span class="text-yellow-400">js</span>
+      <span class="text-cyan-400">react</span>
+      <span class="text-gray-400">github</span>
+      <span class="text-teal-400">tailwind</span>
+    </div>
+  </div>
+
+</body>
+</html>
