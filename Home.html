@@ -6,9 +6,9 @@
   <style src="style.css"></style>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Demilade's Portfolio</title>
-  <link rel="icon" href="/plus-assets/img/favicon/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/plus-assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/plus-assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" href="icons8-favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons8-favicon-96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons8-favicon-48.png">
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> 
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,19 @@
     <link rel="stylesheet" href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css">
     <script type="module" src="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YyXT4JTbhyj6m_tS2D",
+      });
+   })();
+    </script>
+    <script src="script.js"></script>
+
+
 <!--
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -79,7 +92,7 @@
 
   <div class="mx-auto max-w-2xl text-center py-16 sm:py-20 lg:py-24">
     <h1 class="text-6xl font-semibold tracking-tight sm:text-6xl text-cyan-400">
-      Welcome to Demilade's Space
+      Hi, I'm Demilade, welcome to my space
     </h1>
     <p class="mt-6 text-lg font-medium">
       I'm just a web developer who also happens to be a mechatronics engineer...
@@ -149,7 +162,7 @@
     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
       <div class="lg:pr-4">
         <div class="max-w-xl text-base/7 lg:max-w-lg">
-          <p>I'm a detail-obsessed mechatronics engineer + frontend dev, master of automation, system design, and slick UI. I work with HTML, CSS, JavaScript and React to craft responsive web apps and also turn engineering principles into real-world wins by building various autonomous systems...</p>
+          <p>I'm a detail-obsessed mechatronics engineer + frontend dev, master of automation, system design, and sleek UI. I work with HTML, CSS, JavaScript and React to craft responsive web apps and also turn engineering principles into real-world wins by building various autonomous systems...</p>
         </div>
       </div>
     </div>
@@ -231,16 +244,16 @@
       <article class="flex max-w-xl flex-col items-start justify-between">
         <div class="flex items-center gap-x-4 text-xs">
           <time datetime="Nov 2025 - Date" class="">Nov 2025 - Date</time>
-          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium">Onsite</a>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium">Hybrid</a>
         </div>
         <div class="group relative grow">
           <h3 class="mt-3 text-lg/6 font-semibold text-cyan-400">
             <a href="#">
               <span class="absolute inset-0"></span>
-              National Youth Service Corp (NYSC)
+              Graduate internship at SmartTeller Hub
             </a>
           </h3>
-          <p class="mt-5 line-clamp-3 text-sm/6">Graduate Internship</p>
+          <p class="mt-5 line-clamp-3 text-sm/6">Work on the frontend UI of various projects</p>
         </div>
         <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
           <img src="profil_pic3.jpg" alt="" class="size-10 rounded-full bg-gray-800" />
@@ -251,7 +264,7 @@
                 Jayeoba Demilade
               </a>
             </p>
-            <p>Graduate Intern</p>
+            <p>Frontend Developer</p>
           </div>
         </div>
       </article>
@@ -300,6 +313,12 @@
         <img src="Automotive dustbin 1.jpg" alt="Project 5">
         <h3>Self-Actuating Waste Receptacle with Proximity-Triggered Lid</h3>
         <p>A sensor-driven, electromechanical bin featuring an infrared proximity detector, microcontroller logic, and servo-actuated lid.</p>
+      </div>
+
+        <div class="project">
+        <img src="solar.jpg" alt="Project 2">
+        <h3>Solar Panel Installation</h3>
+        <p>The project involved mounting racking, attaching panels, wiring them to an inverter and batteries, connecting them to my school's engineering laboratory.</p>
       </div>
 
   </section>
@@ -355,17 +374,22 @@
     </div>
     <div>
       <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Name</label>
-      <input placeholder="Your name" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="text" value="" name="name"></div>
+      <input placeholder="Your name" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="text" value="" name="name" id="name"></div>
+
+      <div>
+      <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Subject</label>
+      <input placeholder="Your Subject" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="text" value="" name="subject" id="subject"></div>
+
       <div>
         <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Email</label>
-        <input placeholder="Your email address" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="email" value="" name="email">
+        <input placeholder="Your email address" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="email" value="" name="email" id="email">
       </div>
       <div>
         <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Message</label>
-        <textarea name="message" rows="5" placeholder="Tell me something great..." class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)] resize-none" required=""></textarea>
+        <textarea name="message" rows="5" placeholder="Tell me something great..." class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)] resize-none" required="" id="message"></textarea>
       </div>
       <button type="submit" class="self-start px-6 py-3 mt-4 bg-[var(--color-neonBlue)] text-secondary font-bold rounded-lg
-            cursor-pointer shadow-[var(--shadow-neon)] hover:scale-105 transition-all duration-300">Send Message 🚀</button>
+            cursor-pointer shadow-[var(--shadow-neon)] hover:scale-105 transition-all duration-300" onclick="sendMail()">Send Message 🚀</button>
 
         <div class="social-icons">
           <!-- LinkedIn -->
@@ -561,31 +585,18 @@
       download.style.transform = 'scale(1)';
     });
   });
-/*
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent default form submission
-
-    // Generate params from form inputs (match your template placeholders)
-    const templateParams = {
-      name: document.getElementById('Name').value,
-      email: document.getElementById('Email').value,
-      message: document.getElementById('Message').value
-    };
-
-    emailjs.send('service_dgyvvya', 'template_lzwmz7g', templateParams)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert('Failed to send message. Please try again.');
-      });
-  });
-  
-  */
   
 </script>
 
-
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "yXT4JTbhyj6m_tS2D",
+      });
+   })();
+</script>
 </body>
 </html>
