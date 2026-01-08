@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style src="style.css"></style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Demilade's Portfolio</title>
+  <link rel="icon" href="icons8-favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons8-favicon-96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons8-favicon-48.png">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.usefathom.com/script.js" data-site="SOXJJCZQ" data-auto="false" defer=""></script>
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css">
+    <link rel="modulepreload" href="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js">
+    <link rel="modulepreload" href="https://tailwindcss.com/plus-assets/build/assets/client-qyRSZoVl.js">
+    <link rel="stylesheet" href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css">
+    <script type="module" src="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YyXT4JTbhyj6m_tS2D",
+      });
+   })();
+    </script>
+    <script src="script.js"></script>
+    
+<style>
+     /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+</style>
+
+</head>
+<body>
+  <!--Header-->
+<header class=" sticky top-0 w-full py-4 z-20 bg-[#0a0a1a] text-gray-50">
+  <div class="mx-auto flex justify-between items-center px-6 xl:px-4">
+    <h1 class="xl:text-2xl font-bold text-cyan-400" style="opacity: 1; transform: none;">Demilade's Space</h1>
+    <div class="lg:flex">
+      <div class="lg:flex items-center justify-between w-full" style="opacity: 1; transform: none;">
+        <nav class="flex gap-6 items-center list-none"><li>
+          <a href="#Home" class="text-accent capitalize text-md hover:text-accent/70 transition-all duration-300 text-cyan-400">Home</a></li>
+          <li><a href="#About" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">About</a></li>
+          <li><a href="#Experience" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">Experience</a></li>
+          <li><a href="#projects" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">Projects</a></li>
+          <li><a href="#contact" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">Contact</a></li>
+        <div class="flex items-center gap-4">
+          <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 3.1a1 1 0 0 1 1 1V6a1 1 0 1 1-2 0V4.1a1 1 0 0 1 1-1Zm7.07 3.03a1 1 0 0 1 1.41 1.41L19.07 9a1 1 0 1 1-1.41-1.41l1.41-1.46ZM21 11a1 1 0 1 1 0 2h-1.9a1 1 0 1 1 0-2H21Zm-9 6a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5.66 2.34A1 1 0 1 1 16.24 19l1.43-1.43a1 1 0 1 1 1.41 1.41L17.66 19.34ZM12 18a1 1 0 0 1 1 1v1.9a1 1 0 1 1-2 0V19a1 1 0 0 1 1-1Zm-7.07-3.03a1 1 0 1 1 1.41-1.41L7.76 15a1 1 0 1 1-1.41 1.41L4.93 14.97ZM3 11h1.9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2Zm1.93-4.9A1 1 0 1 1 6.34 7.5L4.93 8.9A1 1 0 1 1 3.52 7.5l1.41-1.4Z"/>
+            </svg>
+          </button>
+        </div>
+</header>
+
+<!--Hero Section-->
+  <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+    <div style="clip-path: polygon(74.1% 44.1%,100% 61.6%,97.5% 26.9%,85.5% 0.1%,80.7% 2%,72.5% 32.5%,60.2% 62.4%,52.4% 68.1%,47.5% 58.3%,45.2% 34.5%,27.5% 76.7%,0.1% 64.9%,17.9% 100%,27.6% 76.8%,76.1% 97.7%,74.1% 44.1%)"
+         class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+  </div>
+
+  <div class="mx-auto w-[450px] h-[400px] flex items-center justify-center">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+
+    <dotlottie-wc
+      src="https://lottie.host/eb84fbdb-9a3a-45d7-8097-b30372da088b/460vhJploj.lottie"
+      style="width:100%; height:100%;"
+      autoplay
+      loop
+      aria-label="Animated developer working on laptop"
+      role="img">
+    </dotlottie-wc>
+  </div>
+
+  <div class="mx-auto max-w-2xl text-center py-16 sm:py-20 lg:py-24">
+    <h1 class="text-6xl font-semibold tracking-tight sm:text-6xl text-cyan-400">
+      Hi, I'm Demilade, welcome to my space
+    </h1>
+    <p class="mt-6 text-lg font-medium">
+      I'm just a web developer who also happens to be a mechatronics engineer...
+    </p>
+
+<div class="mt-10 flex justify-center">
+  <a href="Demilade Resume.pdf"
+     download
+     class="group relative inline-flex items-center gap-2 mb-8 px-6 py-3 dark:bg-[#0a0a1a] text-gray-50 hover:bg-white hover:text-black text-sm rounded-lg shadow-lg transition-all duration-300 ease-out">
+
+    <!-- Optional: Inner glow on hover -->
+    <span class="absolute inset-0 rounded-lg bg-cyan-400 
+                 opacity-0 group-hover:opacity-20 
+                 transition-opacity duration-300 -z-10"></span>
+
+    <!-- Text + Icon -->
+    <span class="flex items-center gap-2 text-cyan-400">
+      Download CV
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="h-4 w-4 transition-transform group-hover:translate-y-1" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </span>
+
+    <!-- Neon outer glow (on hover) -->
+    <span class="absolute inset-0 rounded-lg 
+                 opacity-0 group-hover:opacity-100 
+                 transition-opacity duration-300 -z-10 
+                 pointer-events-none"></span>
+  </a>
+</div>
+
+<!--About me-->
+<div class="flex items-center mb-8">
+  <div class="flex-grow border-b border-gray-600"></div>
+  <span class="text-5xl md:text-6xl font-semibold leading-tight">About 
+    <span class="text-5xl md:text-6xl font-semibold leading-tight">Me</span>
+  </span>
+  <div class="flex-grow border-b border-gray-600"></div>
+</div>
+<div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+    <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div class="lg:pr-4">
+        <div class="lg:max-w-lg">
+          <h1 class="mt-2 text-4xl tracking-tight text-pretty sm:text-5xl text-cyan-400">Who is Demilade?</h1>
+          <p class="mt-6 text-xl/8">I'm a Jack of a few a trades and a Mechatronics Engineering graduate from Bowen University, Nigeria.</p>
+        </div>
+      </div>
+    </div>
+    <div class="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+      <img src="About me.jpg" alt="My Image" class="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228" />
+    </div>
+    <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div class="lg:pr-4">
+        <div class="max-w-xl text-base/7 lg:max-w-lg">
+          <p>I'm a detail-obsessed mechatronics engineer + frontend dev, master of automation, system design, and sleek UI. I work with HTML, CSS, JavaScript and React to craft responsive web apps and also turn engineering principles into real-world wins by building various autonomous systems...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--My Experience-->
+<div class="flex items-center mb-8">
+  <div class="flex-grow border-b border-gray-600"></div>
+  <span class="text-5xl md:text-6xl font-semibold leading-tight">My 
+    <span class="text-5xl md:text-6xl font-semibold leading-tight">Experience</span>
+  </span>
+  <div class="flex-grow border-b border-gray-600"></div>
+</div>
+
+    <div class="container mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <div class="container">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="Feb. 2023 – Aug. 2023" class="#">Feb. 2023 – Aug. 2023</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium">Onsite</a>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg/6 font-semibold text-cyan-400">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Research Assistant, Institute of Agricultural Research and Training, Nigeria
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm/6#"> Conducted engineering research for agricultural applications.</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="profil_pic1.jpg" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Jayeoba Demilade
+              </a>
+            </p>
+            <p>Engineering Intern</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+      <div class="container">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="Mar. 2024 – Aug. 2024" class="#">Mar. 2024 – Aug. 2024</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium">Onsite</a>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg/6 font-semibold text-cyan-400">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Intern, Transmission Company of Nigeria (TCN), Ibadan
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm/6">Assisted in maintenance of electrical equipment and machinery.</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="profil_pic2.jpg" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Jayeoba Demilade
+              </a>
+            </p>
+            <p>Engineering Intern</p>
+          </div>
+        </div>
+      </article>
+      </div>
+
+      <div class="container">
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="Nov 2025 - Date" class="">Nov 2025 - Date</time>
+          <a href="#" class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium">Hybrid</a>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg/6 font-semibold text-cyan-400">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Graduate internship at SmartTeller Hub
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm/6">Work on the frontend UI of various projects</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="profil_pic3.jpg" alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm/6">
+            <p class="font-semibold">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Jayeoba Demilade
+              </a>
+            </p>
+            <p>Frontend Developer</p>
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--My projects-->
+<div class="flex items-center mb-8">
+  <div class="flex-grow border-b border-gray-600"></div>
+  <span class="text-5xl md:text-6xl font-semibold leading-tight">My 
+    <span class="text-5xl md:text-6xl font-semibold leading-tight">Projects</span>
+  </span>
+  <div class="flex-grow border-b border-gray-600"></div>
+</div>
+
+<section id="projects" class="reveal">
+<div class=" container mt-40 g-30">
+      <div class="grid grid-cols-1 sm: grid-cols-2 lg: grid-cols-3 gap-6">
+        <div class="project">
+          <img src="AECT picture.png" alt="Project 1">
+          <h3>Automotive Electric Circuit Trainer (AECT)</h3>
+          <p>The AECT is the practical teaching/training device that illustrates the basic and advanced electrical circuitry used in modern automobiles.</p>
+        </div>
+
+      <div class="project">
+        <img src="project 1.png" alt="Project 2">
+        <h3>AECT Interface</h3>
+        <p>The Automotive Electric Circuit Trainer (AECT) is an interactive simulation platform designed to teach automotive electrical systems.</p>
+      </div>
+
+         <div class="project">
+        <img src="Portfolio website.png" alt="Project 3">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio site built with HTML, CSS, and JavaScript animations.</p>
+      </div>
+
+         <div class="project">
+        <img src="project 4.png" alt="Project 4">
+        <h3>Color-Sorting Machine</h3>
+        <p>An automotive color identification system that also sorts different materials based on their colors</p>
+      </div>
+
+        <div class="project">
+        <img src="Automotive dustbin 1.jpg" alt="Project 5">
+        <h3>Self-Actuating Waste Receptacle with Proximity-Triggered Lid</h3>
+        <p>A sensor-driven, electromechanical bin featuring an infrared proximity detector, microcontroller logic, and servo-actuated lid.</p>
+      </div>
+
+        <div class="project">
+        <img src="solar.jpg" alt="Project 6">
+        <h3>Solar Panel Installation</h3>
+        <p>The project involved mounting racking, attaching panels, wiring them to an inverter and batteries, connecting them to my school's engineering laboratory.</p>
+      </div>
+
+  </section>
+
+<!--Tools I work with-->
+<div class="flex items-center mb-8">
+  <div class="flex-grow border-b border-gray-600"></div>
+  <span class="text-5xl md:text-6xl font-semibold leading-tight">Tools I 
+    <span class="text-5xl md:text-6xl font-semibold leading-tight">Work with</span>
+  </span>
+  <div class="flex-grow border-b border-gray-600"></div>
+</div>
+
+  <div class="flex items-center justify-center">
+
+  <div class="marquee w-full">
+    <div class="glide text-4xl md:text-6xl font-bold flex gap-12 items-center">
+      <!-- Repeated list to ensure seamless loop -->
+      <span>Html</span>
+      <span class="text-blue-400">Bootstrap</span>
+      <span class="text-yellow-400">JavaScript</span>
+      <span class="text-cyan-400">React</span>
+     <span class="text-gray-400">Git/Github</span> 
+      <span class="text-teal-400">Tailwind CSS</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- Duplicate for seamless loop -->
+      <span>Html</span>
+      <span class="text-blue-400">Bootstrap</span>
+      <span class="text-yellow-400">JavaScript</span>
+      <span class="text-cyan-400">React</span>
+      <span class="text-gray-400">Git/Giithub</span>
+      <span class="text-teal-400">Tailwind CSS</span>
+    </div>
+  </div>
+
+</div>
+
+<!--Contact Me-->
+<div class="flex items-center mb-8">
+  <div class="flex-grow border-b border-gray-600"></div>
+  <span class="text-5xl md:text-6xl font-semibold leading-tight">Contact 
+    <span class="text-5xl md:text-6xl font-semibold leading-tight">Me</span>
+  </span>
+  <div class="flex-grow border-b border-gray-600"></div>
+</div>
+
+
+  <div class="flex flex-col items-center justify-center mt-6" style="opacity: 1; transform: none;">
+  <form class="box w-full max-w-2xl mt-12 bg-secondary backdrop-blur-lg rounded-3xl border border-primary/10 p-8 xl:hover:shadow-[0_0_20px_5px_var(--color-neonBlue)] flex flex-col gap-6 transition-all duration-300">
+    <div class="flex flex-col gap-2">
+      <h3 class="text-accent">Hit Me Up!</h3>
+      <p class="text-sm uppercase text-primary/50">I'm always open to discussing new projects, creative ideas, or opportunities, feel free to reach out. I would love to hear from you!</p>
+    </div>
+    <div>
+      <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Name</label>
+      <input placeholder="Your name" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="text" value="" name="name" id="name"></div>
+
+      <div>
+      <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Subject</label>
+      <input placeholder="Your Subject" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="text" value="" name="subject" id="subject"></div>
+
+      <div>
+        <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Email</label>
+        <input placeholder="Your email address" class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]" required="" type="email" value="" name="email" id="email">
+      </div>
+      <div>
+        <label class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2">Message</label>
+        <textarea name="message" rows="5" placeholder="Tell me something great..." class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)] resize-none" required="" id="message"></textarea>
+      </div>
+      <button type="submit" class="self-start px-6 py-3 mt-4 bg-[var(--color-neonBlue)] text-secondary font-bold rounded-lg
+            cursor-pointer shadow-[var(--shadow-neon)] hover:scale-105 transition-all duration-300" onclick="sendMail()">Send Message 🚀</button>
+
+        <div class="social-icons">
+          <!-- LinkedIn -->
+           <a href="https://www.linkedin.com/in/demilade-jayeoba-3b80752b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5H4.5V24H.5V8.5zM8.5 8.5H12.2V10.3H12.3C12.8 9.3 14 8 16 8 19.6 8 20 10.3 20 13.5V24H16V14.5C16 12.8 15.7 11 13.8 11 11.8 11 11.5 12.6 11.5 14.5V24H7.5V8.5H8.5Z"/>
+            </svg>
+          </a>
+
+          <!-- Twitter/X -->
+            <a href="https://x.com/itsjust_jayc?t=2IO4SVyV-rdiSisRz0AjqA&s=09" target="_blank" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M18.36 2H21.65L14.64 10.17L23 22H16.52L11.45 15.12L5.67 22H2.38L9.82 13.23L2 2H8.63L13.19 8.23L18.36 2ZM17.23 20H19.04L7.17 4H5.24L17.23 20Z"/>
+              </svg>
+            </a>
+
+          <!-- GitHub -->
+            <a href="https://github.com/itsjustjayc" target="_blank" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.4 0 12.07C0 17.36 3.44 21.8 8.21 23.39C8.82 23.5 9.05 23.15 9.05 22.84C9.05 22.56 9.04 21.73 9.03 20.73C5.67 21.46 4.97 19.18 4.97 19.18C4.43 17.86 3.63 17.5 3.63 17.5C2.55 16.77 3.71 16.78 3.71 16.78C4.91 16.87 5.54 18.05 5.54 18.05C6.6 19.87 8.32 19.35 9.02 19.06C9.13 18.28 9.43 17.77 9.76 17.47C7.11 17.15 4.34 16.12 4.34 11.5C4.34 10.19 4.81 9.12 5.61 8.3C5.48 8 5.07 6.75 5.73 5.07C5.73 5.07 6.74 4.75 9.03 6.33C9.99 6.07 11.03 5.94 12.07 5.94C13.11 5.94 14.15 6.07 15.11 6.33C17.39 4.75 18.4 5.07 18.4 5.07C19.06 6.75 18.66 8 18.53 8.3C19.34 9.12 19.8 10.19 19.8 11.5C19.8 16.14 17.02 17.14 14.36 17.47C14.78 17.84 15.15 18.6 15.15 19.73C15.15 21.3 15.13 22.45 15.13 22.84C15.13 23.15 15.36 23.51 15.98 23.39C20.74 21.8 24.18 17.36 24.18 12.07C24.18 5.4 18.81 0 12 0Z"/>
+              </svg>
+            </a>
+
+          <!-- Email -->
+           <a href="mailto:jayeobademilade@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+            </svg>
+          </a>
+        </div>
+      </form>
+    </div>
+
+
+<!--Footer-->
+<div class="text-center md:text-left padding: 20px h-24 flex items-center justify-center">
+    <footer>
+    <p>© 2025 Jayç | Frontend Developer</p>
+  </footer>
+</div>
+
+ 
+ <style>
+      .box {
+      border: 3px solid #444;
+      border-radius: 10px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+     body{
+      background-color: white;
+    }
+
+    body.dark{
+      background-color: #0a0a1a;
+      color: white;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    }
+
+ .projects {
+      display: flex;
+      /*
+      grid-template-columns: repeat(auto-fit), minmax(300px, 1fr);*/
+      gap: 30px;
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    .project {
+      /*background: #1e293b;*/
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project h3 {
+      color: #06b6d4;
+      margin-bottom: 8px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .social-icons svg {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: fill 0.3s ease, transform 0.3s ease;
+    }
+    .social-icons svg:hover {
+      transform: scale(1.2);
+    }
+
+        @keyframes glide {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .glide {
+      display: inline-block;
+      white-space: nowrap;
+      animation: glide 20s linear infinite;
+    }
+
+    .marquee {
+      overflow: hidden;
+      position: relative;
+    }
+
+</style>
+
+<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // On page load: restore the last saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark');
+  } else {
+    body.classList.remove('dark');
+  }
+
+  // Toggle theme and save preference
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+
+    // Save the current theme to localStorage
+    if (body.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+    const box = document.querySelector('.box');
+
+    box.addEventListener('mouseover', () => {
+      box.style.boxShadow = '0 0 40px 15px #00ffff';
+    });
+
+    box.addEventListener('mouseout', () => {
+      box.style.boxShadow = 'none';
+      box.style.transform = 'scale(1)';
+    });
+
+    const containers = document.querySelectorAll('.container');
+
+    containers.forEach(container => {
+      container.addEventListener('mouseenter', () => {
+      container.style.transform = 'scale(1.05)';
+      container.style.transition = 'transform 0.3s ease';
+    });
+
+      container.addEventListener('mouseleave', () => {
+      container.style.transform = 'scale(1)';
+    });
+  });
+
+    const download = document.querySelectorAll('.download');
+
+      download.forEach(download => {
+      download.addEventListener('mouseenter', () => {
+      download.style.transform = 'scale(1.05)';
+      download.style.transition = 'transform 0.3s ease';
+    });
+
+      download.addEventListener('mouseleave', () => {
+      download.style.transform = 'scale(1)';
+    });
+  });
+  
+</script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "yXT4JTbhyj6m_tS2D",
+      });
+   })();
+</script>
+</body>
+</html>

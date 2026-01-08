@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style src="style.css"></style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Demilade's Portfolio</title>
+  <link rel="icon" href="icons8-favicon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons8-favicon-96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons8-favicon-48.png">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.usefathom.com/script.js" data-site="SOXJJCZQ" data-auto="false" defer=""></script>
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css">
+    <link rel="modulepreload" href="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js">
+    <link rel="modulepreload" href="https://tailwindcss.com/plus-assets/build/assets/client-qyRSZoVl.js">
+    <link rel="stylesheet" href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css">
+    <script type="module" src="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YyXT4JTbhyj6m_tS2D",
+      });
+   })();
+    </script>
+    <script src="script.js"></script>
+    
+<style>
+     /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+</style>
+
+</head>
+<body>
+  <!--Header-->
+<header class=" sticky top-0 w-full py-4 z-20 bg-[#0a0a1a] text-gray-50">
+  <div class="mx-auto flex justify-between items-center px-6 xl:px-4">
+    <h1 class="xl:text-2xl font-bold text-cyan-400" style="opacity: 1; transform: none;">Demilade's Space</h1>
+    <div class="lg:flex">
+      <div class="lg:flex items-center justify-between w-full" style="opacity: 1; transform: none;">
+        <nav class="flex gap-6 items-center list-none"><li>
+          <a href="#Home" class="text-accent capitalize text-md hover:text-accent/70 transition-all duration-300 text-cyan-400">Home</a></li>
+          <li><a href="#About" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">About</a></li>
+          <li><a href="#Experience" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">Experience</a></li>
+          <li><a href="#projects" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">Projects</a></li>
+          <li><a href="#contact" class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300">Contact</a></li>
+        <div class="flex items-center gap-4">
+          <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 3.1a1 1 0 0 1 1 1V6a1 1 0 1 1-2 0V4.1a1 1 0 0 1 1-1Zm7.07 3.03a1 1 0 0 1 1.41 1.41L19.07 9a1 1 0 1 1-1.41-1.41l1.41-1.46ZM21 11a1 1 0 1 1 0 2h-1.9a1 1 0 1 1 0-2H21Zm-9 6a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5.66 2.34A1 1 0 1 1 16.24 19l1.43-1.43a1 1 0 1 1 1.41 1.41L17.66 19.34ZM12 18a1 1 0 0 1 1 1v1.9a1 1 0 1 1-2 0V19a1 1 0 0 1 1-1Zm-7.07-3.03a1 1 0 1 1 1.41-1.41L7.76 15a1 1 0 1 1-1.41 1.41L4.93 14.97ZM3 11h1.9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2Zm1.93-4.9A1 1 0 1 1 6.34 7.5L4.93 8.9A1 1 0 1 1 3.52 7.5l1.41-1.4Z"/>
+            </svg>
+          </button>
+        </div>
+</header>
+<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // On page load: restore the last saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark');
+  } else {
+    body.classList.remove('dark');
+  }
+
+  // Toggle theme and save preference
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+
+    // Save the current theme to localStorage
+    if (body.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+</script>
+</body>
+</html>
