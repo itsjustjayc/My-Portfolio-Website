@@ -1,0 +1,153 @@
+/* ============================================
+   CUSTOM COLOR VARIABLES - LIGHT MODE (DEFAULT)
+   ============================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-tertiary: #9ca3af;
+  --text-light: #f3f4f6;
+
+  /* Border Colors */
+  --border-primary: #d1d5db;
+  --border-secondary: #e5e7eb;
+  --border-light: #f3f4f6;
+
+  /* Accent Colors */
+  --accent-primary: #06b6d4;
+  --accent-hover: #0891b2;
+  --accent-light: #cffafe;
+
+  /* Component Colors */
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --input-bg: #f3f4f6;
+  --input-border: #d1d5db;
+  --input-placeholder: #9ca3af;
+
+  /* Button Colors */
+  --button-bg: #4f46e5;
+  --button-hover: #4338ca;
+  --button-text: #ffffff;
+
+  /* Header/Footer */
+  --header-bg: #ffffff;
+  --header-shadow: rgba(0, 0, 0, 0.05);
+  --footer-bg: #111827;
+
+  /* Special Colors */
+  --neon-blue: #00ffff;
+  --neon-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.3);
+}
+
+/* ============================================
+  CUSTOM COLOR VARIABLES - DARK MODE
+============================================ */
+
+body.dark {
+  /* Background Colors */
+  --bg-primary: #030712;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1f2937;
+
+  /* Text Colors */
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --text-light: #f3f4f6;
+
+  /* Border Colors */
+  --border-primary: #374151;
+  --border-secondary: #4b5563;
+  --border-light: #1f2937;
+
+  /* Accent Colors */
+  --accent-primary: #06b6d4;
+  --accent-hover: #0891b2;
+  --accent-light: #164e63;
+
+  /* Component Colors */
+  --card-bg: #1f2937;
+  --card-border: #374151;
+  --input-bg: #111827;
+  --input-border: #374151;
+  --input-placeholder: #6b7280;
+
+  /* Button Colors */
+  --button-bg: #06b6d4;
+  --button-hover: #0891b2;
+  --button-text: #111827;
+
+  /* Header/Footer */
+  --header-bg: #030712;
+  --header-shadow: rgba(0, 0, 0, 0.3);
+  --footer-bg: #000000;
+
+  /* Special Colors */
+  --neon-blue: #00ffff;
+  --neon-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Remove default input/textarea styles */
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button,
+input,
+textarea {
+  transition: all 0.3s ease;
+}

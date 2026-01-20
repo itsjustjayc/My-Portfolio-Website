@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--  class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark js-focus-visible" data-js-focus-visible=""-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <style src="style.css"></style> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Demilade's Portfolio</title>
+    <link rel="icon" href="/plus-assets/img/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/plus-assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/plus-assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <!--
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+-->
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      data-site="SOXJJCZQ"
+      data-auto="false"
+      defer=""
+    ></script>
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="preload"
+      as="style"
+      href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css"
+    />
+    <link
+      rel="modulepreload"
+      href="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js"
+    />
+    <link
+      rel="modulepreload"
+      href="https://tailwindcss.com/plus-assets/build/assets/client-qyRSZoVl.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://tailwindcss.com/plus-assets/build/assets/app-K0-Z-yHU.css"
+    />
+    <script
+      type="module"
+      src="https://tailwindcss.com/plus-assets/build/assets/app-SNu2a1YS.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <style>
+      /* Google Font */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+      body {
+        background-color: white;
+      }
+
+      #theme-toggle {
+        position: relative;
+        z-index: 9999;
+      }
+
+      .dark-mode {
+        background-color: #201e1e;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="w-full py-4 bg-background">
+      <div
+        class="container mx-auto flex justify-between items-center px-6 xl:px-4"
+      >
+        <h1 class="xl:text-2xl font-bold" style="opacity: 1; transform: none">
+          Demilade's Space
+        </h1>
+        <div class="lg:flex">
+          <div
+            class="lg:flex items-center justify-between w-full"
+            style="opacity: 1; transform: none"
+          >
+            <nav class="flex gap-6 items-center list-none">
+              <li>
+                <a
+                  href="#home"
+                  class="text-accent capitalize text-md hover:text-accent/70 transition-all duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-primary capitalize text-md hover:text-accent/70 transition-all duration-300"
+                  >Contact</a
+                >
+              </li>
+              <div class="flex items-center gap-4">
+                <button
+                  id="theme-toggle"
+                  class="theme-btn"
+                  aria-label="Toggle Dark Mode"
+                >
+                  <svg
+                    id="theme-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 3.1a1 1 0 0 1 1 1V6a1 1 0 1 1-2 0V4.1a1 1 0 0 1 1-1Zm7.07 3.03a1 1 0 0 1 1.41 1.41L19.07 9a1 1 0 1 1-1.41-1.41l1.41-1.46ZM21 11a1 1 0 1 1 0 2h-1.9a1 1 0 1 1 0-2H21Zm-9 6a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5.66 2.34A1 1 0 1 1 16.24 19l1.43-1.43a1 1 0 1 1 1.41 1.41L17.66 19.34ZM12 18a1 1 0 0 1 1 1v1.9a1 1 0 1 1-2 0V19a1 1 0 0 1 1-1Zm-7.07-3.03a1 1 0 1 1 1.41-1.41L7.76 15a1 1 0 1 1-1.41 1.41L4.93 14.97ZM3 11h1.9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2Zm1.93-4.9A1 1 0 1 1 6.34 7.5L4.93 8.9A1 1 0 1 1 3.52 7.5l1.41-1.4Z"
+                    />
+                  </svg>
+                </button>
+                <!-- <button
+                  id="theme-toggle"
+                  class="bg-gray-800 p-2"
+                >
+                  Toggle Theme
+                </button> -->
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      >
+        <div
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+          class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
+        ></div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div class="text-center">
+            <h1
+              class="text-5xl font-semibold tracking-tight text-balance sm:text-7xl"
+            >
+              Welcome to Demilade's Space
+            </h1>
+            <p class="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
+              I'm just a web developer who also happens to be a mechatronics
+              engineer...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="download">
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="Demilade Resume.pdf"
+            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >Download CV</a
+          >
+        </div>
+      </div>
+
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      >
+        <div
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+          class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
+        ></div>
+      </div>
+    </div>
+
+    <!--About me-->
+    <div class="flex items-center mb-8">
+      <div class="flex-grow border-b border-gray-600"></div>
+      <span
+        class="text-3xl xl:text-4xl text-accent-primary m-4 font-family: pt-serif-regular"
+        >About
+        <span class="text-accent">Me</span>
+      </span>
+      <div class="flex-grow border-b border-gray-600"></div>
+    </div>
+
+    <section
+      class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8"
+    >
+      <div class="mx-auto max-w-2xl lg:max-w-4xl">
+        <img src="#" alt="" class="mx-auto h-12" />
+        <figure class="mt-10">
+          <blockquote class="text-center text-xl/8 font-semibold sm:text-2xl/9">
+            <p class="font-bold text-accent">
+              I'm a mechatronics Engineering graduate from bowen University,
+              Nigeria and a web developer.<br />
+              I build with modern tools like tailwind css to bring designs to
+              life and make interfaces that look good and work even better.
+            </p>
+          </blockquote>
+          <figcaption class="mt-10">
+            <img
+              src="profil_pic1.jpg"
+              alt=""
+              class="mx-auto size-10 rounded-full"
+            />
+            <div
+              class="mt-4 flex items-center justify-center space-x-3 text-base"
+            >
+              <div class="font-semibold">Jayeoba Demilade</div>
+              <svg
+                viewBox="0 0 2 2"
+                width="3"
+                height="3"
+                aria-hidden="true"
+                class="fill-white"
+              >
+                <circle r="1" cx="1" cy="1" />
+              </svg>
+              <div>CEO of Demilade's Space</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!--My Experience-->
+    <div class="flex items-center mb-8">
+      <div class="flex-grow border-b border-gray-600"></div>
+      <span
+        class="text-3xl xl:text-4xl text-accent-primary m-4 font-family: pt-serif-regular"
+        >My
+        <span class="text-accent">Experience</span>
+      </span>
+      <div class="flex-grow border-b border-gray-600"></div>
+    </div>
+
+    <div
+      class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+    >
+      <div class="container">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="Feb. 2023 – Aug. 2023" class="#"
+              >Feb. 2023 – Aug. 2023</time
+            >
+            <a
+              href="#"
+              class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium"
+              >Onsite</a
+            >
+          </div>
+          <div class="group relative grow">
+            <h3 class="mt-3 text-lg/6 font-semibold">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Research Assistant, Institute of Agricultural Research and
+                Training, Nigeria
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6#">
+              Conducted engineering research for agricultural applications.
+            </p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+            <img
+              src="profil_pic1.jpg"
+              alt=""
+              class="size-10 rounded-full bg-gray-800"
+            />
+            <div class="text-sm/6">
+              <p class="font-semibold">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Jayeoba Demilade
+                </a>
+              </p>
+              <p>Engineering Intern</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="Mar. 2024 – Aug. 2024" class="#"
+              >Mar. 2024 – Aug. 2024</time
+            >
+            <a
+              href="#"
+              class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium"
+              >Onsite</a
+            >
+          </div>
+          <div class="group relative grow">
+            <h3 class="mt-3 text-lg/6 font-semibold">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Intern, Transmission Company of Nigeria (TCN), Ibadan
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6">
+              Assisted in maintenance of electrical equipment and machinery.
+            </p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+            <img
+              src="profil_pic2.jpg"
+              alt=""
+              class="size-10 rounded-full bg-gray-800"
+            />
+            <div class="text-sm/6">
+              <p class="font-semibold">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Jayeoba Demilade
+                </a>
+              </p>
+              <p>Engineering Intern</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="Nov 2025 - Date" class="">Nov 2025 - Date</time>
+            <a
+              href="#"
+              class="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium"
+              >Onsite</a
+            >
+          </div>
+          <div class="group relative grow">
+            <h3 class="mt-3 text-lg/6 font-semibold">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                National Youth Service Corp (NYSC)
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6">Graduate Internship</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+            <img
+              src="profil_pic3.jpg"
+              alt=""
+              class="size-10 rounded-full bg-gray-800"
+            />
+            <div class="text-sm/6">
+              <p class="font-semibold">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Jayeoba Demilade
+                </a>
+              </p>
+              <p>Graduate Intern</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+    </style>
+
+    <script>
+      const containers = document.querySelectorAll(".container");
+
+      containers.forEach((container) => {
+        container.addEventListener("mouseenter", () => {
+          container.style.transform = "scale(1.05)";
+          container.style.transition = "transform 0.3s ease";
+        });
+
+        container.addEventListener("mouseleave", () => {
+          container.style.transform = "scale(1)";
+        });
+      });
+
+      const download = document.querySelectorAll(".download");
+
+      download.forEach((download) => {
+        download.addEventListener("mouseenter", () => {
+          download.style.transform = "scale(1.05)";
+          download.style.transition = "transform 0.3s ease";
+        });
+
+        download.addEventListener("mouseleave", () => {
+          download.style.transform = "scale(1)";
+        });
+      });
+      /*
+  const container = document.querySelector('.container');
+
+    container.addEventListener('mouseenter', () => {
+      container.style.boxShadow = '0 0 20px 5px rgba(0, 150, 255, 0.8)';
+    });
+
+    container.addEventListener('mouseleave', () => {
+      container.style.boxShadow = 'none';
+    });
+    */
+    </script>
+
+    <!--My projects-->
+    <div class="flex items-center mb-8">
+      <div class="flex-grow border-b border-gray-600"></div>
+      <span class="text-3xl xl:text-4xl text-accent-primary m-4"
+        >My
+        <span class="text-accent">Projects</span>
+      </span>
+      <div class="flex-grow border-b border-gray-600"></div>
+    </div>
+
+    <section id="projects" class="reveal">
+      <div class="">
+        <div class="flex justify-center items-center gap-2 m-0 p-2">
+          <div class="project">
+            <img src="project 1.png" alt="Project 1" />
+            <h3>Automotive Electric Circuit Trainer (AECT)</h3>
+            <p>
+              The Automotive Electric Circuit Trainer (AECT) is an interactive
+              simulation platform designed to teach automotive electrical
+              systems.
+            </p>
+          </div>
+
+          <div class="project">
+            <img src="project 2.png" alt="Project 2" />
+            <h3>Portfolio Website</h3>
+            <p>
+              A responsive portfolio site built with HTML, CSS, and JavaScript
+              animations.
+            </p>
+
+            <div class="project">
+              <img src="project 1.png" alt="Project 1" />
+              <h3>Automotive Electric Circuit Trainer (AECT)</h3>
+              <p>
+                The Automotive Electric Circuit Trainer (AECT) is an interactive
+                simulation platform designed to teach automotive electrical
+                systems.
+              </p>
+            </div>
+
+            <div class="project">
+              <img src="project 1.png" alt="Project 1" />
+              <h3>Automotive Electric Circuit Trainer (AECT)</h3>
+              <p>
+                The Automotive Electric Circuit Trainer (AECT) is an interactive
+                simulation platform designed to teach automotive electrical
+                systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        /* .projects { */
+        /* display: flex;
+          flex-wrap: wrap;
+          overflow: hidden; */
+        /* grid-template-columns: repeat(auto-fit), minmax(300px, 1fr); */
+        /* gap: 10px;
+          margin-top: 40px;
+          width: 100%; */
+        /* } */
+
+        .project {
+          /*background: #1e293b;*/
+          width: 500px;
+          border-radius: 10px;
+          padding: 10px;
+          transition: transform 0.3s;
+        }
+
+        .project:hover {
+          transform: translateY(-5px);
+        }
+
+        .project img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 15px;
+        }
+
+        .project h3 {
+          color: #38bdf8;
+          margin-bottom: 8px;
+        }
+      </style>
+    </section>
+
+    <!--Contact Me-->
+    <div class="flex items-center mb-8">
+      <div class="flex-grow border-b border-gray-600"></div>
+      <span class="text-3xl xl:text-4xl text-accent-primary m-4"
+        >Contact
+        <span class="text-accent">Me</span>
+      </span>
+      <div class="flex-grow border-b border-gray-600"></div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center mt-6"
+      style="opacity: 1; transform: none"
+    >
+      <form
+        class="box w-full max-w-2xl mt-12 bg-secondary backdrop-blur-lg rounded-3xl border border-primary/10 p-8 xl:hover:shadow-[0_0_20px_5px_var(--color-neonBlue)] flex flex-col gap-6 transition-all duration-300"
+      >
+        <div class="flex flex-col gap-2">
+          <h3 class="text-accent">Hit Me Up!</h3>
+          <p class="text-sm uppercase text-primary/50">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities, feel free to reach out. I would love to hear from
+            you!
+          </p>
+        </div>
+        <div>
+          <label
+            class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2"
+            >Name</label
+          >
+          <input
+            placeholder="Your name"
+            class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]"
+            required=""
+            type="text"
+            value=""
+            name="name"
+          />
+        </div>
+        <div>
+          <label
+            class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2"
+            >Email</label
+          >
+          <input
+            placeholder="Your email address"
+            class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)]"
+            required=""
+            type="email"
+            value=""
+            name="email"
+          />
+        </div>
+        <div>
+          <label
+            class="block text-sm uppercase tracking-widest text-[var(--color-neonBlue)] mb-2"
+            >Message</label
+          >
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Tell me something great..."
+            class="w-full px-4 py-3 bg-secondary/30 text-primary border border-primary/20 rounded-lg placeholder:text-primary/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-neonBlue)] resize-none"
+            required=""
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="self-start px-6 py-3 mt-4 bg-[var(--color-neonBlue)] text-secondary font-bold rounded-lg cursor-pointer shadow-[var(--shadow-neon)] hover:scale-105 transition-all duration-300"
+        >
+          Send Message 🚀
+        </button>
+
+        <style>
+          .social-icons {
+            display: flex;
+            gap: 20px;
+          }
+
+          .social-icons svg {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: fill 0.3s ease, transform 0.3s ease;
+          }
+
+          .social-icons svg:hover {
+            transform: scale(1.2);
+          }
+        </style>
+
+        <div class="social-icons">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/demilade-jayeoba-3b80752b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5H4.5V24H.5V8.5zM8.5 8.5H12.2V10.3H12.3C12.8 9.3 14 8 16 8 19.6 8 20 10.3 20 13.5V24H16V14.5C16 12.8 15.7 11 13.8 11 11.8 11 11.5 12.6 11.5 14.5V24H7.5V8.5H8.5Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Twitter/X -->
+          <a
+            href="https://x.com/itsjust_jayc?t=2IO4SVyV-rdiSisRz0AjqA&s=09"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18.36 2H21.65L14.64 10.17L23 22H16.52L11.45 15.12L5.67 22H2.38L9.82 13.23L2 2H8.63L13.19 8.23L18.36 2ZM17.23 20H19.04L7.17 4H5.24L17.23 20Z"
+              />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/itsjustjayc"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.4 0 12.07C0 17.36 3.44 21.8 8.21 23.39C8.82 23.5 9.05 23.15 9.05 22.84C9.05 22.56 9.04 21.73 9.03 20.73C5.67 21.46 4.97 19.18 4.97 19.18C4.43 17.86 3.63 17.5 3.63 17.5C2.55 16.77 3.71 16.78 3.71 16.78C4.91 16.87 5.54 18.05 5.54 18.05C6.6 19.87 8.32 19.35 9.02 19.06C9.13 18.28 9.43 17.77 9.76 17.47C7.11 17.15 4.34 16.12 4.34 11.5C4.34 10.19 4.81 9.12 5.61 8.3C5.48 8 5.07 6.75 5.73 5.07C5.73 5.07 6.74 4.75 9.03 6.33C9.99 6.07 11.03 5.94 12.07 5.94C13.11 5.94 14.15 6.07 15.11 6.33C17.39 4.75 18.4 5.07 18.4 5.07C19.06 6.75 18.66 8 18.53 8.3C19.34 9.12 19.8 10.19 19.8 11.5C19.8 16.14 17.02 17.14 14.36 17.47C14.78 17.84 15.15 18.6 15.15 19.73C15.15 21.3 15.13 22.45 15.13 22.84C15.13 23.15 15.36 23.51 15.98 23.39C20.74 21.8 24.18 17.36 24.18 12.07C24.18 5.4 18.81 0 12 0Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:jayeobademilade@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <style>
+      .box {
+        border: 3px solid #444;
+        border-radius: 10px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+    </style>
+    <script>
+      const box = document.querySelector(".box");
+
+      box.addEventListener("mouseover", () => {
+        box.style.boxShadow = "0 0 40px 15px #00ffff";
+      });
+
+      box.addEventListener("mouseout", () => {
+        box.style.boxShadow = "none";
+        box.style.transform = "scale(1)";
+      });
+    </script>
+
+    <!--Footer-->
+    <footer>
+      <p>© 2025 Jayç | Frontend Developer</p>
+    </footer>
+
+    <style>
+      footer {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+    <script>
+      const toggleButton = document.getElementById("theme-toggle");
+      console.log(toggleButton);
+      // toggleButton.onclick = () => {
+      //   console.log("clicked");
+      // };
+      toggleButton.addEventListener("click", () => {
+        console.log("clicked");
+        document.body.classList.toggle("dark-mode");
+      });
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   const toggleButton = document.getElementById("theme-toggle");
+      //   toggleButton.addEventListener("click", () => {
+      //     document.body.classList.toggle("dark-mode");
+      //   });
+      // });
+    </script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("theme-toggle");
+        console.log("Button found:", toggleButton);
+        if (!toggleButton) return; // safety check
+
+        toggleButton.addEventListener("click", () => {
+          console.log("clicked");
+          document.body.classList.toggle("dark");
+        });
+      });
+    </script> -->
+  </body>
+</html>
+I have some code for a portfolio website. Go through the code and understand it.
+The main code is in

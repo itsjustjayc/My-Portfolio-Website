@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demilade's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body class="transition-theme">
+    <!-- Header -->
+    <header
+      class="w-full fixed py-4 top-0 z-50 transition-theme"
+      style="
+        background-color: var(--header-bg);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-primary);
+      "
+    >
+      <div
+        class="container mx-auto flex justify-between items-center px-6 py-4 xl:px-8"
+      >
+        <h1
+          class="text-xl md:text-2xl font-bold whitespace-nowrap"
+          style="color: var(--text-primary)"
+        >
+          Demilade's Space
+        </h1>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden p-2 rounded-lg transition-colors"
+          style="color: var(--text-primary)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav id="desktop-nav" class="hidden md:flex gap-6 items-center">
+          <a
+            href="#home"
+            class="capitalize text-sm transition-colors duration-300 nav-link"
+            style="color: var(--text-primary)"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="capitalize text-sm transition-colors duration-300 nav-link"
+            style="color: var(--text-secondary)"
+            >About</a
+          >
+          <a
+            href="#experience"
+            class="capitalize text-sm transition-colors duration-300 nav-link"
+            style="color: var(--text-secondary)"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="capitalize text-sm transition-colors duration-300 nav-link"
+            style="color: var(--text-secondary)"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="capitalize text-sm transition-colors duration-300 nav-link"
+            style="color: var(--text-secondary)"
+            >Contact</a
+          >
+
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-lg transition-colors duration-300 hover:opacity-80"
+            aria-label="Toggle Dark Mode"
+            style="color: var(--text-primary)"
+          >
+            <svg
+              id="theme-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 3.1a1 1 0 0 1 1 1V6a1 1 0 1 1-2 0V4.1a1 1 0 0 1 1-1Zm7.07 3.03a1 1 0 0 1 1.41 1.41L19.07 9a1 1 0 1 1-1.41-1.41l1.41-1.46ZM21 11a1 1 0 1 1 0 2h-1.9a1 1 0 1 1 0-2H21Zm-9 6a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5.66 2.34A1 1 0 1 1 16.24 19l1.43-1.43a1 1 0 1 1 1.41 1.41L17.66 19.34ZM12 18a1 1 0 0 1 1 1v1.9a1 1 0 1 1-2 0V19a1 1 0 0 1 1-1Zm-7.07-3.03a1 1 0 1 1 1.41-1.41L7.76 15a1 1 0 1 1-1.41 1.41L4.93 14.97ZM3 11h1.9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2Zm1.93-4.9A1 1 0 1 1 6.34 7.5L4.93 8.9A1 1 0 1 1 3.52 7.5l1.41-1.4Z"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <nav
+        id="mobile-nav"
+        class="hidden md:hidden border-t transition-theme"
+        style="
+          background-color: var(--header-bg);
+          border-color: var(--border-primary);
+        "
+      >
+        <div class="container mx-auto px-6 py-4 flex flex-col gap-4">
+          <a
+            href="#home"
+            class="capitalize text-sm transition-colors duration-300 nav-link block"
+            style="color: var(--text-primary)"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="capitalize text-sm transition-colors duration-300 nav-link block"
+            style="color: var(--text-secondary)"
+            >About</a
+          >
+          <a
+            href="#experience"
+            class="capitalize text-sm transition-colors duration-300 nav-link block"
+            style="color: var(--text-secondary)"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="capitalize text-sm transition-colors duration-300 nav-link block"
+            style="color: var(--text-secondary)"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="capitalize text-sm transition-colors duration-300 nav-link block"
+            style="color: var(--text-secondary)"
+            >Contact</a
+          >
+          <button
+            id="theme-toggle-mobile"
+            class="p-2 rounded-lg transition-colors duration-300 hover:opacity-80 text-left"
+            aria-label="Toggle Dark Mode"
+            style="color: var(--text-primary)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 3.1a1 1 0 0 1 1 1V6a1 1 0 1 1-2 0V4.1a1 1 0 0 1 1-1Zm7.07 3.03a1 1 0 0 1 1.41 1.41L19.07 9a1 1 0 1 1-1.41-1.41l1.41-1.46ZM21 11a1 1 0 1 1 0 2h-1.9a1 1 0 1 1 0-2H21Zm-9 6a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5.66 2.34A1 1 0 1 1 16.24 19l1.43-1.43a1 1 0 1 1 1.41 1.41L17.66 19.34ZM12 18a1 1 0 0 1 1 1v1.9a1 1 0 1 1-2 0V19a1 1 0 0 1 1-1Zm-7.07-3.03a1 1 0 1 1 1.41-1.41L7.76 15a1 1 0 1 1-1.41 1.41L4.93 14.97ZM3 11h1.9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2Zm1.93-4.9A1 1 0 1 1 6.34 7.5L4.93 8.9A1 1 0 1 1 3.52 7.5l1.41-1.4Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen isolate px-6 pt-14 lg:px-8 overflow-hidden transition-theme"
+      style="background-color: var(--bg-primary)"
+    >
+      <!-- Gradient background top -->
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden sm:-top-80"
+        style="--tw-blur: blur(60px)"
+      >
+        <div
+          class="relative left-1/2 -translate-x-1/2 -translate-y-1/2"
+          style="
+            width: 1000px;
+            height: 1400px;
+            background: radial-gradient(
+              circle,
+              var(--accent-primary),
+              var(--accent-hover)
+            );
+            opacity: 0.25;
+            filter: blur(80px);
+          "
+        ></div>
+      </div>
+
+      <!-- Gradient background bottom -->
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -bottom-10 -z-10 transform-gpu overflow-hidden"
+        style="--tw-blur: blur(60px)"
+      >
+        <div
+          class="relative left-1/2 translate-x-1/2 translate-y-1/2"
+          style="
+            width: 1400px;
+            height: 800px;
+            background: radial-gradient(
+              circle,
+              var(--accent-primary),
+              var(--accent-hover)
+            );
+            opacity: 0.25;
+            filter: blur(80px);
+          "
+        ></div>
+      </div>
+
+      <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+        <div class="text-center">
+          <h1
+            class="text-5xl font-semibold tracking-tight leading-tight mb-6 sm:text-7xl"
+            style="color: var(--text-primary)"
+          >
+            Welcome to Demilade's Space
+          </h1>
+          <p
+            class="mt-8 text-lg font-medium sm:text-xl"
+            style="color: var(--text-tertiary)"
+          >
+            I'm just a web developer who also happens to be a mechatronics<br
+              class="hidden sm:block"
+            />
+            engineer...
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex items-center justify-center gap-x-6 pb-16 z-10">
+        <a
+          href="assets/documents/Demilade Resume.pdf"
+          class="download rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-lg hover:scale-105 focus:outline-offset-2 transition-all duration-300"
+          style="background-color: var(--accent-primary)"
+        >
+          Download CV
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-16 px-6 lg:px-8 transition-theme"
+      style="background-color: var(--bg-primary)"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-center gap-4 mb-12">
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+          <h2
+            class="text-3xl xl:text-4xl font-bold whitespace-nowrap"
+            style="color: var(--text-primary)"
+          >
+            About <span style="color: var(--accent-primary)">Me</span>
+          </h2>
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+        </div>
+
+        <div class="mx-auto max-w-4xl">
+          <figure class="text-center">
+            <blockquote
+              class="text-xl sm:text-2xl font-semibold"
+              style="color: var(--text-primary)"
+            >
+              <p class="font-bold" style="color: var(--accent-primary)">
+                I'm a mechatronics Engineering graduate from Bowen University,
+                Nigeria and a web developer.<br />
+                I build with modern tools like Tailwind CSS to bring designs to
+                life and make interfaces that look good and work even better.
+              </p>
+            </blockquote>
+            <figcaption class="mt-10">
+              <img
+                src="assets/images/profil_pic1.jpg"
+                alt="Jayeoba Demilade"
+                class="mx-auto h-20 w-20 rounded-full object-cover"
+              />
+              <div
+                class="mt-4 flex items-center justify-center gap-3 text-base"
+              >
+                <div class="font-semibold" style="color: var(--text-primary)">
+                  Jayeoba Demilade
+                </div>
+                <div
+                  class="w-1 h-1 rounded-full"
+                  style="background-color: var(--text-tertiary)"
+                ></div>
+                <div style="color: var(--text-secondary)">
+                  CEO of Demilade's Space
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section
+      id="experience"
+      class="py-16 px-6 lg:px-8 transition-theme"
+      style="background-color: var(--bg-secondary)"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-center gap-4 mb-12">
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+          <h2
+            class="text-3xl xl:text-4xl font-bold whitespace-nowrap"
+            style="color: var(--text-primary)"
+          >
+            My <span style="color: var(--accent-primary)">Experience</span>
+          </h2>
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          <!-- Experience Card 1 -->
+          <div
+            class="experience-card rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+            style="
+              background-color: var(--card-bg);
+              border: 1px solid var(--card-border);
+            "
+          >
+            <div
+              class="flex items-center gap-4 text-sm mb-4"
+              style="color: var(--text-secondary)"
+            >
+              <time>Feb. 2023 – Aug. 2023</time>
+              <span
+                class="rounded-full px-3 py-1 text-xs font-medium text-white"
+                style="background-color: rgba(0, 0, 0, 0.6)"
+                >Onsite</span
+              >
+            </div>
+            <h3
+              class="text-lg font-semibold mb-3"
+              style="color: var(--text-primary)"
+            >
+              Research Assistant, Institute of Agricultural Research and
+              Training, Nigeria
+            </h3>
+            <p class="text-sm mb-6" style="color: var(--text-secondary)">
+              Conducted engineering research for agricultural applications.
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="assets/images/profil_pic1.jpg"
+                alt="Jayeoba Demilade"
+                class="h-10 w-10 rounded-full object-cover"
+              />
+              <div class="text-sm">
+                <p class="font-semibold" style="color: var(--text-primary)">
+                  Jayeoba Demilade
+                </p>
+                <p style="color: var(--text-secondary)">Engineering Intern</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div
+            class="experience-card rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+            style="
+              background-color: var(--card-bg);
+              border: 1px solid var(--card-border);
+            "
+          >
+            <div
+              class="flex items-center gap-4 text-sm mb-4"
+              style="color: var(--text-secondary)"
+            >
+              <time>Mar. 2024 – Aug. 2024</time>
+              <span
+                class="rounded-full px-3 py-1 text-xs font-medium text-white"
+                style="background-color: rgba(0, 0, 0, 0.6)"
+                >Onsite</span
+              >
+            </div>
+            <h3
+              class="text-lg font-semibold mb-3"
+              style="color: var(--text-primary)"
+            >
+              Intern, Transmission Company of Nigeria (TCN), Ibadan
+            </h3>
+            <p class="text-sm mb-6" style="color: var(--text-secondary)">
+              Assisted in maintenance of electrical equipment and machinery.
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="assets/images/profil_pic2.jpg"
+                alt="Jayeoba Demilade"
+                class="h-10 w-10 rounded-full object-cover"
+              />
+              <div class="text-sm">
+                <p class="font-semibold" style="color: var(--text-primary)">
+                  Jayeoba Demilade
+                </p>
+                <p style="color: var(--text-secondary)">Engineering Intern</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div
+            class="experience-card rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+            style="
+              background-color: var(--card-bg);
+              border: 1px solid var(--card-border);
+            "
+          >
+            <div
+              class="flex items-center gap-4 text-sm mb-4"
+              style="color: var(--text-secondary)"
+            >
+              <time>Nov 2025 - Present</time>
+              <span
+                class="rounded-full px-3 py-1 text-xs font-medium text-white"
+                style="background-color: rgba(0, 0, 0, 0.6)"
+                >Onsite</span
+              >
+            </div>
+            <h3
+              class="text-lg font-semibold mb-3"
+              style="color: var(--text-primary)"
+            >
+              National Youth Service Corp (NYSC)
+            </h3>
+            <p class="text-sm mb-6" style="color: var(--text-secondary)">
+              Graduate Internship
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="assets/images/profil_pic3.jpg"
+                alt="Jayeoba Demilade"
+                class="h-10 w-10 rounded-full object-cover"
+              />
+              <div class="text-sm">
+                <p class="font-semibold" style="color: var(--text-primary)">
+                  Jayeoba Demilade
+                </p>
+                <p style="color: var(--text-secondary)">Graduate Intern</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-16 px-6 lg:px-8 transition-theme"
+      style="background-color: var(--bg-primary)"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-center gap-4 mb-12">
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+          <h2
+            class="text-3xl xl:text-4xl font-bold whitespace-nowrap"
+            style="color: var(--text-primary)"
+          >
+            My <span style="color: var(--accent-primary)">Projects</span>
+          </h2>
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          <!-- Project Card 1 -->
+          <div
+            class="project-card group rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            style="background-color: var(--card-bg)"
+          >
+            <img
+              src="assets/images/project 1.png"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold mb-3"
+                style="color: var(--accent-primary)"
+              >
+                Automotive Electric Circuit Trainer (AECT)
+              </h3>
+              <p style="color: var(--text-secondary)">
+                An interactive simulation platform designed to teach automotive
+                electrical systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="project-card group rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            style="background-color: var(--card-bg)"
+          >
+            <img
+              src="assets/images/project 2.png"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold mb-3"
+                style="color: var(--accent-primary)"
+              >
+                Portfolio Website
+              </h3>
+              <p style="color: var(--text-secondary)">
+                A responsive portfolio site built with HTML, CSS, and JavaScript
+                animations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="project-card group rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            style="background-color: var(--card-bg)"
+          >
+            <img
+              src="assets/images/project 3.jpg"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold mb-3"
+                style="color: var(--accent-primary)"
+              >
+                Project Showcase
+              </h3>
+              <p style="color: var(--text-secondary)">
+                Showcasing various projects and web development techniques
+                implemented.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div
+            class="project-card group rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            style="background-color: var(--card-bg)"
+          >
+            <img
+              src="assets/images/project 4.png"
+              alt="Project 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold mb-3"
+                style="color: var(--accent-primary)"
+              >
+                Technical Implementation
+              </h3>
+              <p style="color: var(--text-secondary)">
+                Advanced technical projects demonstrating expertise in modern
+                web technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-16 px-6 lg:px-8 transition-theme"
+      style="background-color: var(--bg-secondary)"
+    >
+      <div class="container mx-auto max-w-2xl">
+        <div class="flex items-center justify-center gap-4 mb-12">
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+          <h2
+            class="text-3xl xl:text-4xl font-bold whitespace-nowrap"
+            style="color: var(--text-primary)"
+          >
+            Contact <span style="color: var(--accent-primary)">Me</span>
+          </h2>
+          <div
+            class="flex-grow border-b-2"
+            style="border-color: var(--border-primary)"
+          ></div>
+        </div>
+
+        <form
+          class="contact-form rounded-2xl p-8 flex flex-col gap-6 shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+          "
+        >
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold text-lg" style="color: var(--accent-primary)">
+              Hit Me Up!
+            </h3>
+            <p
+              class="text-sm uppercase tracking-widest"
+              style="color: var(--text-secondary)"
+            >
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities. Feel free to reach out. I would love to hear from
+              you!
+            </p>
+          </div>
+
+          <div>
+            <label
+              class="block text-sm uppercase tracking-widest font-semibold mb-2"
+              style="color: var(--accent-primary)"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 transition-all duration-300"
+              style="
+                background-color: var(--input-bg);
+                color: var(--text-primary);
+                border: 1px solid var(--input-border);
+                --tw-ring-color: var(--accent-primary);
+              "
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              class="block text-sm uppercase tracking-widest font-semibold mb-2"
+              style="color: var(--accent-primary)"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              class="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 transition-all duration-300"
+              style="
+                background-color: var(--input-bg);
+                color: var(--text-primary);
+                border: 1px solid var(--input-border);
+                --tw-ring-color: var(--accent-primary);
+              "
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              class="block text-sm uppercase tracking-widest font-semibold mb-2"
+              style="color: var(--accent-primary)"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell me something great..."
+              class="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 resize-none transition-all duration-300"
+              style="
+                background-color: var(--input-bg);
+                color: var(--text-primary);
+                border: 1px solid var(--input-border);
+                --tw-ring-color: var(--accent-primary);
+              "
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="self-start px-6 py-3 mt-4 font-bold rounded-lg cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg"
+            style="
+              background-color: var(--accent-primary);
+              color: var(--button-text);
+            "
+          >
+            Send Message 🚀
+          </button>
+
+          <div
+            class="flex gap-6 pt-4"
+            style="border-top: 1px solid var(--border-primary)"
+          >
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/demilade-jayeoba-3b80752b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="transition-colors duration-300"
+              style="color: var(--text-secondary)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5H4.5V24H.5V8.5zM8.5 8.5H12.2V10.3H12.3C12.8 9.3 14 8 16 8 19.6 8 20 10.3 20 13.5V24H16V14.5C16 12.8 15.7 11 13.8 11 11.8 11 11.5 12.6 11.5 14.5V24H7.5V8.5H8.5Z"
+                />
+              </svg>
+            </a>
+
+            <!-- Twitter/X -->
+            <a
+              href="https://x.com/itsjust_jayc?t=2IO4SVyV-rdiSisRz0AjqA&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              class="transition-colors duration-300"
+              style="color: var(--text-secondary)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  d="M18.36 2H21.65L14.64 10.17L23 22H16.52L11.45 15.12L5.67 22H2.38L9.82 13.23L2 2H8.63L13.19 8.23L18.36 2ZM17.23 20H19.04L7.17 4H5.24L17.23 20Z"
+                />
+              </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/itsjustjayc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              class="transition-colors duration-300"
+              style="color: var(--text-secondary)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.4 0 12.07C0 17.36 3.44 21.8 8.21 23.39C8.82 23.5 9.05 23.15 9.05 22.84C9.05 22.56 9.04 21.73 9.03 20.73C5.67 21.46 4.97 19.18 4.97 19.18C4.43 17.86 3.63 17.5 3.63 17.5C2.55 16.77 3.71 16.78 3.71 16.78C4.91 16.87 5.54 18.05 5.54 18.05C6.6 19.87 8.32 19.35 9.02 19.06C9.13 18.28 9.43 17.77 9.76 17.47C7.11 17.15 4.34 16.12 4.34 11.5C4.34 10.19 4.81 9.12 5.61 8.3C5.48 8 5.07 6.75 5.73 5.07C5.73 5.07 6.74 4.75 9.03 6.33C9.99 6.07 11.03 5.94 12.07 5.94C13.11 5.94 14.15 6.07 15.11 6.33C17.39 4.75 18.4 5.07 18.4 5.07C19.06 6.75 18.66 8 18.53 8.3C19.34 9.12 19.8 10.19 19.8 11.5C19.8 16.14 17.02 17.14 14.36 17.47C14.78 17.84 15.15 18.6 15.15 19.73C15.15 21.3 15.13 22.45 15.13 22.84C15.13 23.15 15.36 23.51 15.98 23.39C20.74 21.8 24.18 17.36 24.18 12.07C24.18 5.4 18.81 0 12 0Z"
+                />
+              </svg>
+            </a>
+
+            <!-- Email -->
+            <a
+              href="mailto:jayeobademilade@gmail.com"
+              aria-label="Email"
+              class="transition-colors duration-300"
+              style="color: var(--text-secondary)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-8 h-8"
+              >
+                <path
+                  d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-white py-8 text-center transition-theme"
+      style="background-color: var(--footer-bg)"
+    >
+      <p style="color: var(--text-tertiary)">
+        © 2025 Jayç | Frontend Developer
+      </p>
+    </footer>
+
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>
